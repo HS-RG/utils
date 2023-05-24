@@ -13,6 +13,9 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)//返回http500状态，代表有异常发生
     public Result ex(Exception ex){
         ex.printStackTrace();
+        if(ex.getClass().equals(MyException.class)){
+            return Result.error(((MyException) ex).getMsg());
+        }
         return Result.error("对不起，操作失败");
     }
 
