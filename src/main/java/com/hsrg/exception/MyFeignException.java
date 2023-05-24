@@ -3,10 +3,10 @@ package com.hsrg.exception;
 import lombok.Data;
 
 @Data
-public class MyException extends Exception {
+public class MyFeignException extends RuntimeException {
     private String msg;
 
-    public MyException(String msg) {
+    public MyFeignException(String msg) {
         this.msg=msg;
     }
 }
