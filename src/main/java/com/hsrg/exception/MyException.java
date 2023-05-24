@@ -1,11 +1,12 @@
 package com.hsrg.exception;
 
+import lombok.Data;
+
+@Data
 public class MyException extends Exception {
     private String msg;
-    private Integer code;
 
-    public MyException(String msg, Integer code) {
+    public MyException(String msg) {
         this.msg=msg;
-        this.code=code;
     }
 }
