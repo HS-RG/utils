@@ -19,14 +19,13 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = false)
 public class User implements Serializable {
 
     private Long userId;
 
     private String username;
 
-    private String nickName;
+    private String nickname;
 
     private String imageUrl;
 
