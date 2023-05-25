@@ -19,7 +19,6 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = false)
 public class User implements Serializable {
 
     private Long userId;
