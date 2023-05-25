@@ -24,6 +24,8 @@ public class User implements Serializable {
 
     private Long userId;
 
+    private String username;
+
     private String nickName;
 
     private String imageUrl;
