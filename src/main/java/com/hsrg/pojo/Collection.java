@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 /**
@@ -19,14 +20,13 @@ import java.time.LocalTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = false)
-public class Collection implements Serializable {
+public class Collection {
 
     private long userId;
 
     private String fileId;
 
-    private LocalTime createTime;
+    private LocalDateTime createTime;
 
 
 }
