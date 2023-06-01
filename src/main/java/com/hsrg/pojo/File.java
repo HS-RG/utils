@@ -24,4 +24,10 @@ public class File {
     private String typeTag;
     private LocalDateTime updateTime;
     private LocalDateTime createTime;
+
+    public File(Long fileId,String filename,String fileUrl){
+        this.fileId=fileId;
+        this.filename=filename;
+        this.fileUrl=fileUrl;
+    }
 }
