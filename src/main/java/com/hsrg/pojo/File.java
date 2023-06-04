@@ -15,6 +15,7 @@ public class File {
     private MultipartFile file;
     private Long fileId;
     private Long userId;
+    private String username;
     private String filename;
     private String fileUrl;
     private String title;
