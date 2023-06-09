@@ -25,4 +25,10 @@ public class File {
     private String typeTag;
     private LocalDateTime updateTime;
     private LocalDateTime createTime;
+
+    public File(Year yearTag, String courseTag, String typeTag){
+        this.yearTag=yearTag;
+        this.courseTag=courseTag;
+        this.typeTag=typeTag;
+    }
 }
